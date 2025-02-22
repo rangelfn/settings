@@ -1,60 +1,59 @@
 // My settings preferences VS CODE
 {
-    // 🎨 UI e Experiência de Desenvolvimento
+    // 🎨 Interface e aparência
     "apc.electron": {
-        "titleBarStyle": "hiddenInset",
-        "trafficLightPosition": {
-            "x": 11,
-            "y": 10
-        }
+        "titleBarStyle": "hiddenInset", // Oculta a barra de título, mantendo os botões de controle visíveis
+        "trafficLightPosition": { "x": 11, "y": 10 } // Define a posição dos botões de fechar/minimizar/maximizar
     },
-    "workbench.colorTheme": "Min Dark",
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.fontFamily": "JetBrains Mono",
-    "editor.fontSize": 14,
-    "editor.lineHeight": 1.8,
-    "editor.fontLigatures": true,
-    "editor.minimap.enabled": false,
-    "editor.renderWhitespace": "boundary",
-    "editor.renderLineHighlight": "all",
-    "editor.wordWrap": "on",
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
-    "editor.formatOnType": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll": true, 
-        "source.fixAll.eslint": true
-    },
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "workbench.colorTheme": "Min Dark", // Tema escuro minimalista
+    "workbench.iconTheme": "material-icon-theme", // Ícones do Material Design para melhor visualização
+    "editor.fontFamily": "JetBrains Mono", // Define a fonte do editor para JetBrains Mono
+    "editor.fontSize": 14, // Define tamanho da fonte
+    "editor.lineHeight": 1.8, // Define espaçamento entre linhas para melhor legibilidade
+    "editor.fontLigatures": true, // Habilita ligaduras na fonte para melhorar a leitura do código
+    "editor.minimap.enabled": false, // Desativa o minimapa para economizar espaço
 
-    // 🛠️ Configurações de Terminal
-    "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "terminal.integrated.profiles.windows": {
-        "Git Bash": {
-            "path": "C:\\Program Files\\Git\\bin\\bash.exe"
-        }
-    },
-
-    // 📂 Explorer e Organização
-    "explorer.compactFolders": true,
-    "explorer.fileNesting.enabled": true,
-    "explorer.confirmDelete": false,
-    "explorer.fileNesting.patterns": {
+    // 🔹 Configuração do Explorador de Arquivos
+    "explorer.compactFolders": true, // Usa uma exibição mais compacta para diretórios
+    "explorer.fileNesting.enabled": true, // Habilita agrupamento automático de arquivos relacionados
+    "explorer.confirmDelete": false, // Remove a confirmação ao excluir arquivos no Explorador
+    "explorer.fileNesting.patterns": { // Define padrões de agrupamento para arquivos comuns
         "package.json": "package-lock.json, pnpm-lock.yaml, yarn.lock",
         "tailwind.config.js": "postcss.config.js",
         ".env": ".env.*"
     },
 
+    // 📄 Melhorias na edição de código
+    "editor.renderWhitespace": "boundary", // Mostra espaços em branco apenas nas bordas das palavras
+    "editor.renderLineHighlight": "all", // Destaca a linha ativa completamente
+    "editor.wordWrap": "on", // Habilita quebra automática de linha
+    "editor.rulers": [80, 120], // Exibe linhas guias nas colunas 80 e 120
+    "editor.scrollBeyondLastLine": true, // Permite rolagem além da última linha do arquivo
+    "editor.tabSize": 2, // Define o tamanho da tabulação como 2 espaços
+    "editor.detectIndentation": false, // Mantém o tamanho da tabulação fixo, sem detecção automática
+
+    // 🛠️ Formatação de Código
+    "editor.formatOnSave": true, // Formata automaticamente ao salvar
+    "editor.formatOnPaste": true, // Formata automaticamente ao colar código
+    "editor.formatOnType": true, // Formata enquanto você digita
+    "editor.codeActionsOnSave": { // Aplica correções automáticas ao salvar
+        "source.fixAll": true, 
+        "source.fixAll.eslint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode", // Define o Prettier como formatador padrão
+
     // 🟢 Node.js e JavaScript/TypeScript
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "javascript.suggestionActions.enabled": true,
-    "typescript.suggestionActions.enabled": true,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "typescript.tsserver.log": "verbose",
-    "typescript.tsserver.trace": "verbose",
-    "typescript.tsdk": "node_modules/typescript/lib",
-    "eslint.enable": true,
-    "eslint.alwaysShowStatus": true,
+    "javascript.updateImportsOnFileMove.enabled": "always", // Atualiza automaticamente os imports ao mover arquivos
+    "javascript.suggestionActions.enabled": true, // Sugestões inteligentes para JavaScript
+    "typescript.suggestionActions.enabled": true, // Sugestões inteligentes para TypeScript
+    "typescript.updateImportsOnFileMove.enabled": "always", // Atualiza imports ao mover arquivos TypeScript
+    "typescript.tsserver.log": "verbose", // Ativa logs detalhados para melhor depuração
+    "typescript.tsserver.trace": "verbose", // Ativa rastreamento detalhado do TypeScript
+    "typescript.tsdk": "node_modules/typescript/lib", // Usa a versão local do TypeScript do projeto
+
+    // 🔍 ESLint - Linter para JavaScript e TypeScript
+    "eslint.enable": true, // Habilita o ESLint
+    "eslint.alwaysShowStatus": true, // Sempre exibe o status do ESLint na barra inferior
     "eslint.validate": [
         "javascript",
         "javascriptreact",
@@ -63,8 +62,8 @@
         "vue"
     ],
 
-    // 🔵 Vue.js (Vetur e Volar)
-    "vetur.validation.template": false,
+    // 🔵 Vue.js (Configuração de Vetur e Volar)
+    "vetur.validation.template": false, // Desativa validação de templates no Vetur (caso use Volar)
     "vetur.format.defaultFormatter.html": "prettier",
     "vetur.format.defaultFormatter.js": "prettier",
     "vetur.format.defaultFormatter.ts": "prettier",
@@ -74,27 +73,34 @@
     "vetur.format.defaultFormatter.less": "prettier",
     "vetur.format.defaultFormatter.stylus": "prettier",
     "vetur.format.defaultFormatter.pug": "prettier",
-    "vetur.experimental.templateInterpolationService": true,
-    "volar.autoInsert.parentheses": true,
+    "vetur.experimental.templateInterpolationService": true, // Melhora autocomplete em templates Vue
+    "volar.autoInsert.parentheses": true, // Adiciona automaticamente parênteses em funções no Volar
 
     // 🐘 PHP (Otimização com Intelephense)
-    "intelephense.format.enable": true,
-    "php.suggest.basic": false,
-    "php.validate.enable": false,
-    "php.executablePath": "C:\\xampp\\php\\php.exe",
-    "php-cs-fixer.rules": "@PSR12",
-    "php-cs-fixer.formatHtml": true,
+    "intelephense.format.enable": true, // Habilita formatação automática para PHP
+    "php.suggest.basic": false, // Evita sugestões duplicadas do PHP
+    "php.validate.enable": false, // Desativa validação nativa do PHP (confia no Intelephense)
+    "php.executablePath": "C:\\xampp\\php\\php.exe", // Caminho do executável PHP no Windows
+    "php-cs-fixer.rules": "@PSR12", // Formatação PHP no padrão PSR-12
+    "php-cs-fixer.formatHtml": true, // Permite formatação de HTML dentro de arquivos PHP
 
-    // 🔥 Live Server para Desenvolvimento
-    "liveServer.settings.donotShowInfoMsg": true,
-    "liveServer.settings.port": 5500,
+    // 🔥 Live Server para Desenvolvimento Local
+    "liveServer.settings.donotShowInfoMsg": true, // Oculta mensagens informativas do Live Server
+    "liveServer.settings.port": 5500, // Define a porta padrão do Live Server
 
-    // 🛠️ Ajustes Gerais de Trabalho
-    "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": 0,
-    "breadcrumbs.enabled": true,
-    "editor.rulers": [80, 120],
-    "editor.scrollBeyondLastLine": true,
-    "editor.tabSize": 2,
-    "editor.detectIndentation": false
+    // 🛠️ Configurações do Terminal
+    "terminal.integrated.defaultProfile.windows": "Git Bash", // Define Git Bash como terminal padrão
+    "terminal.integrated.profiles.windows": {
+        "Git Bash": {
+            "path": "C:\\Program Files\\Git\\bin\\bash.exe" // Caminho para o Git Bash
+        }
+    },
+
+    // 🚀 Melhorias gerais
+    "workbench.startupEditor": "newUntitledFile", // Abre um arquivo em branco ao iniciar o VS Code
+    "window.zoomLevel": 0, // Nível de zoom padrão
+    "breadcrumbs.enabled": true, // Exibe breadcrumb (caminho do arquivo atual no topo do editor)
+    "workbench.activityBar.location": "hidden", // Oculta a Activity Bar (menu lateral esquerdo)
+    "workbench.statusBar.visible": true, // Mantém a barra de status visível
+    "workbench.layoutControl.enabled": false // Desativa controle de layout do VS Code
 }
