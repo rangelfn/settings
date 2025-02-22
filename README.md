@@ -28,7 +28,7 @@ Antes de começar, certifique-se de que você tenha instalado:
 - [Git](https://git-scm.com/)
 - [PHP](https://www.php.net/)
 
-## 📦 Extensões Recomendadas
+## 📦 **Extensões Recomendadas**
 Instale as seguintes extensões para melhorar a produtividade no VS Code:
 
 ```
