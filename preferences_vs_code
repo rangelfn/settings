@@ -1,59 +1,76 @@
-//My settings preferences VS CODE
+// My settings preferences VS CODE
 {
+    // Configuração do Electron no VS Code (Ajuste da barra de título e posição dos botões)
     "apc.electron": {
-        "titleBarStyle": "hiddenInset",
+        "titleBarStyle": "hiddenInset", // Oculta a barra de título, mantendo os botões de controle visíveis
         "trafficLightPosition": {
             "x": 11,
             "y": 10
         }
     },
-    "apc.font.family": "JetBrains Mono",
+
+    // Configuração da fonte do editor
+    "apc.font.family": "JetBrains Mono", // Define JetBrains Mono como fonte do VS Code
+
+    // Configurações da interface
     "apc.header": {
-        "height": 36
+        "height": 36 // Ajusta a altura do cabeçalho do editor
     },
     "apc.listRow": {
-        "height": 24
+        "height": 24 // Define altura das linhas nas listas
     },
+
+    // Estilização personalizada do VS Code
     "apc.stylesheet": {
-        ".title-label > h2": "display: none",
-        ".editor-actions": "display: none",
-        ".nosidebar .inline-tabs-placeholder": "width: 75px",
-        ".pane-header": "padding: 0 8px",
-        ".pane-body": "padding: 8px",
+        ".title-label > h2": "display: none", // Esconde o título do editor
+        ".editor-actions": "display: none", // Oculta botões de ação do editor
+        ".nosidebar .inline-tabs-placeholder": "width: 75px", // Ajuste de espaçamento para abas sem sidebar
+        ".pane-header": "padding: 0 8px", // Reduz padding do cabeçalho dos painéis
+        ".pane-body": "padding: 8px" // Ajusta o espaçamento interno do corpo dos painéis
     },
-    "breadcrumbs.enabled": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.fontFamily": "JetBrains Mono",
-    "editor.formatOnSave": true,
-    "editor.fontSize": 14,
-    "editor.lineHeight": 1.8,
-    "editor.fontLigatures": true,
-    "editor.minimap.enabled": false,
-    "editor.renderLineHighlight": "gutter",
-    "editor.rulers": [80, 120],
-    "editor.semanticHighlighting.enabled": false,
-    "editor.scrollbar.horizontal": "hidden",
-    "editor.scrollbar.vertical": "hidden",
-    "explorer.compactFolders": true,
-    "explorer.fileNesting.enabled": false,
+
+    // Configuração da navegação e interface do editor
+    "breadcrumbs.enabled": false, // Desativa o breadcrumb (caminho dos arquivos no topo do editor)
+    "editor.fontFamily": "JetBrains Mono", // Fonte do editor de código
+    "editor.formatOnSave": true, // Formata o código automaticamente ao salvar
+    "editor.fontSize": 14, // Tamanho da fonte do editor
+    "editor.lineHeight": 1.8, // Define espaçamento entre linhas
+    "editor.fontLigatures": true, // Habilita ligaduras tipográficas no código
+    "editor.minimap.enabled": false, // Oculta o minimapa de código no VS Code
+    "editor.renderLineHighlight": "gutter", // Destaca a linha ativa apenas na margem esquerda
+    "editor.rulers": [80, 120], // Exibe guias verticais nos colunas 80 e 120 (boa prática para código limpo)
+    "editor.semanticHighlighting.enabled": false, // Desativa realce semântico no código
+    "editor.scrollbar.horizontal": "hidden", // Oculta a barra de rolagem horizontal
+
+    // Configuração do Explorador de Arquivos
+    "explorer.compactFolders": true, // Usa visualização compacta para pastas com poucos arquivos
+    "explorer.fileNesting.enabled": false, // Desativa agrupamento automático de arquivos semelhantes
     "explorer.fileNesting.patterns": {
         "package.json": "eslint*, prettier*, tsconfig*, vite*, pnpm-lock*, package-lock*, bun.lockb",
         "tailwind.config.js": "tailwind.config*, postcss.config*",
         "tailwind.config*": "tailwind.config*, postcss.config*",
-        ".env.local": ".env*",
-        ".env": ".env*"
-        
+        ".env.local": ".env*", // Agrupa arquivos .env* sob .env.local
+        ".env": ".env*" // Agrupa arquivos .env* sob .env
     },
-    "prettier.enable": true,
-    "prettier.singleQuote": false,
-    "prettier.tabWidth": 2,
-    "prettier.useEditorConfig": true,
-    "symbols.hidesExplorerArrows": false,
-    "window.commandCenter": false,
-    "workbench.editor.labelFormat": "short",
-    "workbench.colorTheme": "Min Dark",
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.activityBar.location": "hidden",
-    "workbench.statusBar.visible": false,
-    "workbench.layoutControl.enabled": false,
+
+    // Configuração do layout da interface
+    "symbols.hidesExplorerArrows": false, // Mantém as setas de navegação no Explorador de Arquivos
+    "window.commandCenter": false, // Desativa o Command Center na barra superior
+    "workbench.editor.labelFormat": "short", // Usa nomes curtos nos rótulos das abas dos arquivos
+    "workbench.colorTheme": "Min Dark", // Define o tema do VS Code como "Min Dark"
+    "workbench.startupEditor": "newUntitledFile", // Abre um novo arquivo em branco ao iniciar o VS Code
+
+    // Barra lateral e status
+    "workbench.activityBar.location": "hidden", // Oculta a Activity Bar (barra lateral esquerda com Git, Explorer, etc.)
+    "workbench.statusBar.visible": true, // Mantém a Status Bar visível (mostra branch Git, erros, notificações, etc.)
+    "workbench.layoutControl.enabled": false, // Desativa o controle de layout do VS Code
+    "explorer.confirmDelete": false, // Remove a confirmação ao excluir arquivos no Explorer
+
+    // Configuração do Git Bash como terminal padrão
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.profiles.windows": {
+        "Git Bash": {
+            "path": "C:\\Program Files\\Git\\bin\\bash.exe"
+        }
+    }
 }
