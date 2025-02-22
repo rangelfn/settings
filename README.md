@@ -6,7 +6,7 @@ Este repositório documenta a configuração ideal do **VS Code** para trabalhar
 
 ---
 
-## 📚 Sumário
+## 📖 Sumário
 - [Requisitos](#requisitos)
 - [Extensões Recomendadas](#extensões-recomendadas)
 - [Configuração do VS Code](#configuração-do-vs-code)
@@ -18,6 +18,7 @@ Este repositório documenta a configuração ideal do **VS Code** para trabalhar
 - [Como Usar](#como-usar)
 - [Dúvidas ou Sugestões](#dúvidas-ou-sugestões)
 - [Licença](#licença)
+- [📜 Arquivo Completo de Preferências](#arquivo-completo-de-preferências)
 
 ---
 
@@ -141,3 +142,7 @@ Agora seu VS Code está pronto para desenvolver com **Node.js, Vue.js e PHP**! �
 ## Licença
 📝 Este projeto está sob a licença MIT. Sinta-se à vontade para usar, modificar e compartilhar! 🚀
 
+---
+
+## 📜 Arquivo Completo de Preferências
+Para acessar o arquivo completo das preferências do VS Code, clique [aqui](https://github.com/rangelfn/settings/blob/main/preferences_vs_code).
